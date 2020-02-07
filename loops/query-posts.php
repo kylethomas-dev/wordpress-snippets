@@ -1,6 +1,7 @@
 Standard WordPress query
 
 The below code is generally used to run a standard WordPress loop. A WordPress loop allows the site to loop through posts and display their appropriate values.
+For more information visit WP-Query at the WordPress documentation: https://developer.wordpress.org/reference/classes/wp_query/
 
 <?php
 $args = array( //Setup our query as $args variable.
