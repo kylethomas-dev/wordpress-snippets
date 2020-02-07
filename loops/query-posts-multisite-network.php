@@ -47,18 +47,18 @@ $network_posts = network_query_posts( $args ); //Call posts from all indexed sit
     </div>
 </div>
 
-<?php restore_current_blog(); //Switch back to previous website (where the loop is being called) ?>
+<?php restore_current_blog(); //Switch back to previous website (where the loop is being called). ?>
 
-<?php endforeach; //End foreach loop ?>
+<?php endforeach; //End foreach loop. ?>
 
-<?php endif; //End if loop ?>
+<?php endif; //End if loop. ?>
 
 <?php 
-// we should change the global $wp_query value to work correctly with pagination
+// we should change the global $wp_query value to work correctly with pagination.
 $wp_query = $GLOBALS['network_query']; ?>
 <div class="row">
     <div class="col-md-12 text-center">
-        <?php wp_pagenavi(); ?>
+        <?php wp_pagenavi(); //Here we are using the pagenavi plugin to handle pagination. ?>
     </div>
 </div>
 <?php wp_reset_query(); ?>
